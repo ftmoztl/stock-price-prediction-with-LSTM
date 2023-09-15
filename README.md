@@ -37,6 +37,9 @@ As a third step, after the architecture tuning, the following steps were applied
 By this hyperparameter tuning, the optimal model for each company was saved. The optimal models were detected with respect to the determined threshold. You can find this process in the 'fine-tuning.ipynb' notebook.
 
 # Results
+
+Threshold values of model performance are determined to stop the parameter tuning process. The thresholds were calculated according to the baseline results (multiplied by 0.1) of each company, and optimal models were saved when the models that have reached this target value. You can find the MAPE results of the baseline and developed model which belongs to each company.
+
 ![MAPE-Baseline-LSTM](/Graphs/MAPE-Baseline-LSTM.png)
 
 
