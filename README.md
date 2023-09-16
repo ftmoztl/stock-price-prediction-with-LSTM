@@ -18,7 +18,6 @@ LSTM, which stands for Long Short-Term Memory, is a type of artificial neural ne
 
 
 # Model and Experiments
-
 The datasets were split as 80% of the dataset was for training, 10% of the dataset was for validation, and 10% of the dataset was for testing. The standard scaling was applied for the split datasets. For only the Apple dataset, the dataset had to be filtered to get high performance on the model prediction, and the data after 2020 was used. This filtering process was not applied to the other datasets belonging to Samsung and Xiaomi.
 
 ## Baseline Model
@@ -28,7 +27,6 @@ As a first step of the model development process, a baseline model, Naive foreca
 As a second step, the architectures of the LSTM models were created by Bayesian hyperparameter tuning which was applied only to determine the number of hidden layers and nodes. This tuning gave the optimal number of nodes and hidden layers for each company. These values of the number of nodes and layers were kept as the architecture of the LSTM models. You can find this process below the  'Hyperparameter Tuning' folder in the architecture-tuning.ipynb.
 
 ## Hyperparameter Tuning
-
 As a third step, after the architecture tuning, the following steps were applied to the LSTM model for the hyperparameter tuning and model performance improvement;
 * Xavier initialization 
 * Learning rate scheduler 
@@ -50,15 +48,13 @@ As you can see above, the model obtained a very close prediction of the actual v
 
 # Environment
 
-# Notebooks 
 
+# Useful Notes
+- For this study, in the model development process, the W&B platform was used to track, log, and observe the developing process. Especially, for the deep neural network models, to track each parameter's effect, train, and validation loss and important details this platform is very proposed. 
 
+- Torch architecture was preferred for applying LSTM which can make code easier to read and debug. This is especially valuable when working on complex models like LSTMs.
 
-Torch architecture was used for applying LSTM 
-
-
-
-
+- The model development process was divided into 2 phases. Firstly, architecture tuning is applied to decide the algorithm's essential components,  the number of hidden layers and nodes. After this parameters are determined,  the other parameters should be tuned. This approach is proposed by professors in this field.  
 
 
 # Contribution
