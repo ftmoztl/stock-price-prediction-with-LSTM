@@ -5,7 +5,7 @@ In today's era, financial forecasts have gained significant popularity. Numerous
 For this repository, 3 big companies' stock prices, Apple, Samsung, and Xiaomi are used to predict their next 7 days stock prices. The LSTM algorithm is used for prediction. So, 3 different algorithms are created for each company. 
 
 
-# Data Preparation
+# Dataset and Preprocessing
 The datasets used in this study were sourced from "Investing.com - Stock Market Quotes & Financial News," a platform that aggregates stock price data from various global sources for technology companies. These datasets included historical records at different time intervals, such as hourly, daily, weekly, and monthly. Specifically, stock price data for Apple, Samsung, and Xiaomi were obtained from this platform.
 
 During the data collection process, instances with missing values were identified. These gaps were mainly a result of formal holidays or weekends when stock prices remained unchanged. Additionally, other missing values, including extreme outliers, were detected and treated as outliers, subsequently removed from the dataset. To address the missing values, a Moving Average technique based on the last 10 days' stock price changes was applied. And, the weekends were excluded from the datasets
@@ -42,14 +42,20 @@ Threshold values of model performance are determined to stop the parameter tunin
 
 ![MAPE-Baseline-LSTM](/Graphs/MAPE-Baseline-LSTM.png)
 
+After developing and saving the model, you can use the saved model to visualize the prediction and compare the prediction and actual values of the stock prices. You can use 'get-model-predictions.ipynb' notebooks for this purpose. You can find the sample of real Apple stock prices and predictions with the developed LSTM model below. 
 
-# Dataset
+![Apple-Prediction-Actual](/Graphs/Apple-Prediction-Actual.png)
+
+As you can see above, the model obtained a very close prediction of the actual values. 
 
 # Environment
 
 # Notebooks 
 
-# Proposed Resources
+
+
+Torch architecture was used for applying LSTM 
+
 
 
 
