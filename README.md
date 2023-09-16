@@ -47,7 +47,9 @@ After developing and saving the model, you can use the saved model to visualize 
 As you can see above, the model obtained a very close prediction of the actual values. 
 
 # Environment
+To install the dependencies to run the notebook, you can use Anaconda. Once you have installed Anaconda, run:
 
+`$ conda env create -f environment.yml`
 
 # Useful Notes
 - For this study, in the model development process, the W&B platform was used to track, log, and observe the developing process. Especially, for the deep neural network models, to track each parameter's effect, train, and validation loss and important details this platform is very proposed. 
